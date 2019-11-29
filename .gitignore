@@ -23,6 +23,7 @@ var/
 *.egg-info/
 .installed.cfg
 *.egg
+venv/
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
@@ -54,7 +55,7 @@ coverage.xml
 # Sphinx documentation
 docs/_build/
 
-*.swp 
+*.swp
 
 # PyBuilder
 target/
@@ -66,3 +67,7 @@ data/
 cache-directory/
 
 poetry.lock
+
+timelapse_images/
+.DS_Store
+*.JPG
