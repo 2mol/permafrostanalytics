@@ -41,7 +41,7 @@ args = parser.parse_args()
 data_path = Path(args.path)
 
 # change here to get data from another sensor
-rock_temperature_file = "MH30_temperature_rock_2017.csv"
+rock_temperature_file = "MH15_radiometer__conv_2017.csv"
 
 # Getting either cloud or local data file
 if not args.local:
@@ -57,7 +57,7 @@ if not args.local:
         container="hackathon-on-permafrost",
         prefix="timeseries_derived_data_products",
         account_name=account_name,
-        account_key=account_key, 
+        account_key=account_key,
     )
 else:
     timeseries_folder = Path(data_path).joinpath("timeseries_derived_data_products").resolve()
